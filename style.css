@@ -1,0 +1,80 @@
+body {
+    height: 100%;
+    background-image: url(https://dailyanimeart.files.wordpress.com/2012/09/they-play-rock-paper-scissors1.jpg);
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1,
+p{
+    color: yellowgreen;
+}
+
+h2 {
+    color: goldenrod;
+    text-align: center;
+}
+
+h3{
+    color: red;
+}
+
+.computer-score{
+    margin-right: 0%;
+    top: 0%;
+}
+
+
+.intro {
+    margin-left: 50%;
+    margin-top: 10%; 
+}
+
+.intro button {
+    width: 150px;
+    height: 50px;
+    background: none;
+    border:none;
+    color: goldenrod;
+    font-size: 25px;
+    background: linear-gradient(blue,green,gray);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.options button {
+    width: 150px;
+    height: 50px;
+    background: none;
+    border:none;
+    color: goldenrod;
+    font-size: 25px;
+    background: linear-gradient(blue,green,gray);
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 0%;
+    margin-top: -10%
+}
+/*the game*/
+.match {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease 0.5s;
+}
+
+.hands, 
+.options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#playerHand {
+    transform: rotateY(180deg);
+    
+}
+
